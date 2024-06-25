@@ -29,8 +29,8 @@ Screenster is a high-resolution screen-sharing application designed to facilitat
 
 ### Deployment
 
-- **Render**: Used for deploying the back-end. It provides automatic HTTPS, DDoS protection, and a simple deployment process.
-- **Heroku**: An alternative deployment platform for the back-end. It supports easy deployment and scaling of applications.
+- **AWS EC2**: Used for deploying the back-end server. EC2 provides scalable compute capacity in the cloud.
+- **Vercel**: Used for deploying the front-end. It provides automatic HTTPS, DDoS protection, and a simple deployment process.
 
 ## How It Works
 
@@ -63,28 +63,26 @@ Data is stored in a flexible JSON-like format, allowing for easy updates and ret
 
 ## Deployment Instructions
 
-### Deploying the Back-End
+### Deploying the Back-End on AWS EC2
 
-1. **Render**:
-   - Sign up at [Render](https://render.com).
-   - Create a new Web Service and connect your GitHub repository.
-   - Set the environment to Node, the build command to `npm install`, and the start command to `node server.js`.
-   - Set the environment variables, including `MONGO_URI`.
-   - Click "Create Web Service" to deploy.
+1. **Create an EC2 Instance**:
+   - Launch an EC2 instance using the Ubuntu Server 20.04 LTS AMI.
+   - Connect to your instance via SSH and install necessary dependencies (Node.js, npm, MongoDB).
+   - Clone your backend repository, install dependencies, and start the server.
 
-2. **Heroku**:
-   - Sign up at [Heroku](https://www.heroku.com).
-   - Install the Heroku CLI and create a new app.
-   - Deploy the app using `git push heroku main`.
-   - Set environment variables using `heroku config:set MONGO_URI=your_mongo_uri`.
+2. **Set Up Nginx as a Reverse Proxy**:
+   - Install Nginx and configure it to proxy requests to your Node.js application running on port 3000.
 
-### Deploying the Front-End
+### Deploying the Front-End on Vercel
 
-1. **Vercel**:
-   - Sign up at [Vercel](https://vercel.com).
-   - Install the Vercel CLI.
-   - Navigate to your React project directory and run `vercel`.
-   - Follow the prompts to deploy your project.
+1. **Sign Up / Sign In to Vercel**:
+   - Create a new project on Vercel and connect it to your frontend GitHub repository.
+
+2. **Configure Environment Variables**:
+   - Add `REACT_APP_API_URL` environment variable pointing to your EC2 instance's public URL.
+
+3. **Deploy Your Front-End**:
+   - Deploy your project on Vercel. Vercel will automatically build and deploy your React application.
 
 ## How to Use
 
