@@ -1,0 +1,33 @@
+.screen-share-page {
+  display: flex;
+  flex: 1;
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.settings-button-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.settings-button {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  border: 1px solid #333;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.screen-share-container {
+  flex: 4;
+  padding: 20px;
+}
+
+.chat-container {
+  flex: 1;
+  padding: 20px;
+  border-left: 1px solid #333;
+  background-color: #1f1f1f;
+}
