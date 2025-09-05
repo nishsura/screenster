@@ -8,7 +8,7 @@ const configuration = {
   ]
 };
 
-const ScreenShare = ({ room, username }) => {
+const ScreenShare = ({ room, username, toggleSettings }) => {
   const [screenStream, setScreenStream] = useState(null);
   const [remoteStream, setRemoteStream] = useState(null);
   const [peerConnection, setPeerConnection] = useState(null);
@@ -125,9 +125,6 @@ const ScreenShare = ({ room, username }) => {
           </Paper>
         )}
       </Box>
-      <Button variant="outlined" onClick={toggleSettings} sx={{ mt: 2 }}>
-        Settings
-      </Button>
     </Box>
   );
 };

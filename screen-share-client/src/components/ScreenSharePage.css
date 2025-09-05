@@ -4,6 +4,28 @@
   background-color: #121212;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
+  position: relative; /* Added for correct absolute positioning of children */
+  height: 100vh; /* Ensure it takes full viewport height */
+  width: 100vw; /* Ensure it takes full viewport width */
+  overflow: hidden; /* Hide overflow if content exceeds bounds */
+}
+
+.screen-share-container {
+  flex: 4;
+  padding: 20px;
+  display: flex; /* Added for internal flex layout */
+  flex-direction: column; /* Arrange children vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+}
+
+.chat-container {
+  flex: 1;
+  padding: 20px;
+  border-left: 1px solid #333;
+  background-color: #1f1f1f;
+  display: flex; /* Added for internal flex layout */
+  flex-direction: column; /* Arrange children vertically */
 }
 
 .settings-button-container {
@@ -18,16 +40,4 @@
   border: 1px solid #333;
   padding: 10px;
   cursor: pointer;
-}
-
-.screen-share-container {
-  flex: 4;
-  padding: 20px;
-}
-
-.chat-container {
-  flex: 1;
-  padding: 20px;
-  border-left: 1px solid #333;
-  background-color: #1f1f1f;
 }

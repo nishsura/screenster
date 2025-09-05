@@ -1,95 +1,29 @@
 /* src/App.css */
-
-
-/* src/App.css */
-/* In your index.css or App.css */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif; /* Example of using a different font */
-  background-color: #1f1f1f; /* Dark background color */
-  color: #fff; /* Light text color */
+  /* Font family is now managed by Material-UI theme */
+  /* Background color is now managed by Material-UI theme */
+  /* Text color is now managed by Material-UI theme */
 }
 
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  margin: 5px;
-  cursor: pointer;
-  background-color: #555; /* Button background color */
-  color: #fff; /* Button text color */
-  border: none;
-  border-radius: 5px;
+/* Remove other redundant styles as they are now handled by the Material-UI theme */
+
+.fade-enter {
+  opacity: 0;
 }
 
-input[type="text"] {
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  background-color: #333; /* Input background color */
-  color: #fff; /* Input text color */
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
 }
 
-/* Customize other elements as needed */
-
-h1 {
-  color: #333;
+.fade-exit {
+  opacity: 1;
 }
 
-h2 {
-  color: #555;
-}
-
-button {
-  background-color: #61a1e6;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-button:hover {
-  background-color: #0a325c;
-}
-
-
-.chat-container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
-.chat-box {
-  height: 300px;
-  overflow-y: scroll;
-  border: 1px solid #ccc;
-  padding: 10px;
-  background-color: #fff;
-}
-
-.message {
-  margin-bottom: 10px;
-}
-
-.message strong {
-  color: #007bff;
-}
-
-.home-container {
-  text-align: center;
-  padding: 40px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
-  max-width: 800px;
-}
-
-.home-description {
-  margin: 20px 0;
-  line-height: 1.6;
-  color: #666;
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-out;
 }
