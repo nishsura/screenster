@@ -6,10 +6,10 @@ const HomePage = ({ onStart }) => {
   return (
     <Container maxWidth="md" sx={{ textAlign: 'center', mt: 5 }}>
       <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 'bold' }}>
-        Screenster
+        ScreenApp
       </Typography>
       <Typography variant="body1" paragraph sx={{ mb: 3 }}>
-        Welcome to Screenster, a Screen Sharing App where you can share your screen in high resolution at 60 FPS and chat with your friends in real-time. Whether you're collaborating on a project, watching videos together, or conducting a remote meeting, our app provides a seamless experience to keep you connected.
+        Welcome to ScreenApp, a Screen Sharing App where you can share your screen in high resolution at 60 FPS and chat with your friends in real-time. Whether you're collaborating on a project, watching videos together, or conducting a remote meeting, our app provides a seamless experience to keep you connected.
       </Typography>
       <Typography variant="h6" gutterBottom>
         Features include:

@@ -1,8 +1,8 @@
-# Screenster: High-Resolution Screen Sharing App
+# ScreenApp: High-Resolution Screen Sharing App
 
 ## Overview
 
-Screenster is a high-resolution screen-sharing application designed to facilitate real-time collaboration, video watching, and remote meetings. It offers seamless screen sharing at 60 FPS along with a real-time text chat feature. The application leverages modern web technologies, including React for the front-end, Node.js for the back-end, and MongoDB for data storage.
+ScreenApp is a high-resolution screen-sharing application designed to facilitate real-time collaboration, video watching, and remote meetings. It offers seamless screen sharing at 60 FPS along with a real-time text chat feature. The application leverages modern web technologies, including React for the front-end, Node.js for the back-end, and MongoDB for data storage.
 
 ## Features
 
@@ -103,6 +103,6 @@ Data is stored in a flexible JSON-like format, allowing for easy updates and ret
 
 ## Conclusion
 
-Screenster is a powerful and user-friendly screen-sharing application designed for high-resolution sharing and real-time communication. By leveraging modern web technologies and deployment platforms, it provides a seamless experience for users to collaborate, watch videos, and conduct remote meetings. The use of MongoDB ensures scalable and flexible data storage, making the application robust and efficient.
+ScreenApp is a powerful and user-friendly screen-sharing application designed for high-resolution sharing and real-time communication. By leveraging modern web technologies and deployment platforms, it provides a seamless experience for users to collaborate, watch videos, and conduct remote meetings. The use of MongoDB ensures scalable and flexible data storage, making the application robust and efficient.
 
-Developed by Nish Sura, Screenster aims to bring people closer by providing a reliable and high-quality screen-sharing experience. Feel free to explore, share your screen, and connect with others seamlessly.
+Developed by Nish Sura, ScreenApp aims to bring people closer by providing a reliable and high-quality screen-sharing experience. Feel free to explore, share your screen, and connect with others seamlessly.
